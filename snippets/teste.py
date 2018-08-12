@@ -1,6 +1,6 @@
 # Vamos salvar essa classe para poder importá-la posteriormente
 # Para isso, utilizamos "writefile", que grava o conteúdo da cela
-# num arquivo. Remova o comentário quando quiser salvar.
+# num arquivo.
 
 class dadoSAXS:
     """Conjunto de dados e métodos para avaliação de curvas de SAXS."""
