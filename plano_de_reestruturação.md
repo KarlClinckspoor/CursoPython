@@ -1,8 +1,6 @@
 Planejo reestruturar este curso. Ele era bem simples e gostaria de deixá-lo mais atualizado e seguindo
 melhores práticas.
 
-* Adicionar conteúdo do "The Programmer's Brain"
-* Adicionar exeplos de "Problemas clássicos de ciência de computação"
 * Adicionar exemplos de boas práticas de realização de projetos, seguindo alguns exemplos do
   "Good Research Code Handbook"
     * Adicionar exemplos de criação de ambientes virtuais com pip, virtualenv e conda
@@ -31,6 +29,16 @@ melhores práticas.
 * Logging
 * Decorators (@dataclass, @property, @staticmethod, @classmethod)
 * Básicos de Markdown.
+    * Formatação básica
+    * Em notebooks, latex.
+* Docstrings, sphinx
+* Arquivos do excel (xlsx), word (docx), powerpoint (pptx) são só arquivos .zip com dados em XML.
+* Serialização com pickle, JSON
+* Importância de seguir estilos de código.
+    * Colaborações
+    * Menor peso cognitivo
+    * Manter uma lingua só. Inglês e português juntos me deixa confuso.
+* turtle
 
 
 ## Programmer's brain
@@ -43,6 +51,8 @@ melhores práticas.
 * Sobre entender o que foi escrito e o pq algo foi escrito daquela forma
 * Sobre algumas maneiras de auxiliar a memória no entendimento de um código
     * Tipos de variáveis (acumuladores, temporários, etc)
+* De vez em qdo, uma mudança na visualização é o suficiente para fazer o problema ficar simples
+* Criar modelos mentais
 
 ## Algoritmos e problemas
 
@@ -64,10 +74,12 @@ melhores práticas.
     * Bootstrap
 * PCA, criação, visualização
 * Propagação de incertezas manual, com sympy e com uncertainties
+* Conversão de unidades manual e com pint
 * Fazer uma GUIzinha com tkinter (https://tkdocs.com/index.html)
 * Fazer um desenho em SVG e utilizar Python para alterar algum texto
 * Extrair os títulos de uma sequência de resumos (utilizar o chatGPT para gerar o texto?)
 * wordclouds de algum texto, talvez proj. gutemberg. Posso colocar o exemplo da minha tese de doutorado
+
 
 ## Matplotib
 
@@ -112,6 +124,14 @@ melhores práticas.
 * data science from scratch (?)
 * Arjancodes, mcoding
 
+## Ajuda
+
+* /r/pythonprogramming
+* /r/learnprogramming
+* Python discord https://discord.gg/python
+* Stackoverflow
+    * Cuidados com este em especial, na hora de fazer perguntas
+* ChatGPT
 
 ## Prova final
 
