@@ -39,6 +39,8 @@ melhores práticas.
     * Menor peso cognitivo
     * Manter uma lingua só. Inglês e português juntos me deixa confuso.
 * turtle
+* Estruturar o curso baseado no início em explicar os conceitos básicos e depois partir para
+  exemplos e mais exemplos de problemas que já resolvi no meu tempo.
 
 
 ## Programmer's brain
