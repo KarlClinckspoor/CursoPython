@@ -134,6 +134,7 @@ melhores práticas.
 * Stackoverflow
     * Cuidados com este em especial, na hora de fazer perguntas
 * ChatGPT
+* RealPython
 
 ## Prova final
 
