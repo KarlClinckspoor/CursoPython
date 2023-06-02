@@ -88,7 +88,7 @@ melhores práticas.
 * Plot normal vs scatter
 * Como mapear cores e símbolos para tipos diferenets de dados
 * Como fazer degradês utilizando as cores
-* Alterando os ciclos de cor. Pallettable?
+* Alterando os ciclos de cor. Palettable?
 * Como associar as cores à um colorbar
 * Um pouco sobre cartopy. Utilizar aqueles dados da Petrobras, que foi interessante, e mapas de relevo
 * Contour, contourf, e como plotar uma superfície a partir de um modelo 2D e X e Y 1D.
