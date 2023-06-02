@@ -28,10 +28,10 @@
 ## Sobre como aprender a programar
 
 * Programação geralmente requer uma abordagem diferente de outras ferramentas. É necessário seguir à risca as regras da linguagem. Ao contrário do Excel, por exemplo, não há uma interface simples para explorar e aprender experimentalmente. É necessário criar o programa essencialmente *do zero*, escrevendo-o linha por linha. Por isso, é absolutamente necessário memorizar várias coisas, como palavras chave, sintaxes, e inclusive algumas maneiras de organização de código. Alguns dos conceitos utilizados não são comumente encontrados em outros contextos, como *recursão*, e podem ser complicados de se entender. A chave para aprender tudo isso é esforço, repetição e treino, não há escapatória.
-* É muito fácil esquecermos de certas coisas, especialmente no começo, pois não possuímos os arcabouços e as analogias necessárias para entender certos conceitos. A curva do esquecimento de Ebbinghaus mostra o quanto conseguimos reter de certa informação com o tempo:
+* Felizmente há ferramentas disponíveis para auxiliar no aprendizado de programação (de qualquer tema, realmente). Neste curso, utilizarei várias passagens do livro *The programmer's Brain*, de Felienne Hermans, para fornecer dicas de aprendizado e mostrar como nosso cérebro funciona na hora de aprender e resolver problemas.
+* Por exemplo, a curva do esquecimento de Ebbinghaus mostra o quanto conseguimos reter de certa informação com o tempo:
  [Ebbinghaus](ebbinghaus.png)
  Note que cerca de algumas horas após aprender alguma coisa, já é capaz de termos esquecido 60% da informação. Porém, a repetição espaçada (com um espaçamento adequato, não muito curto nem muito longo) pode permitir-lhe relembrar de informação com maior eficiência, pois torna a curva de Ebbinghaus menos abrupta. 
-* Felizmente há ferramentas disponíveis para auxiliar no aprendizado de programação (de qualquer tema, realmente). Neste curso, utilizarei várias passagens do livro *The programmer's Brain*, de Felienne Hermans, para fornecer dicas de aprendizado e mostrar como nosso cérebro funciona na hora de aprender e resolver problemas.
 * Se você já têm experiência com outras linguagens, aprender uma nova é muito mais fácil - desde que a abordagem da linguagem é similar (se tiverem curiosidade, procurem depois por APL, Lisp e Haskell para verem algumas abordagens diferentes).
 
 ## Por que Python?
