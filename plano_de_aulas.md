@@ -2,12 +2,15 @@
 
 ## Aula 1
 
-* Sobre programar, e sua função aplicada ao meio científico
-  * Imagem da produtividade. Tempo de latência.
-    * *Pode* poupar muito tempo
-    * *Pode* permitir realizar várias análises num conjunto de dados
-    * *Pode* permitir trocar algum parâmetro de análise facilmente, e tudo se refazer do zero
-    * *Pode* permitir padronizar formatos de gráfico e tratamento de dados
+* Para fazer ciência, precisamos de ferramentas que nos ajudem nas tarefas, tanto habituais como específicas. O uso de computadores se tornou ubíquo em todas as áreas da ciência, e há uma variedade infindável de programas feitos para as mais diferentes tarefas. Eu gosto bastante de procurar programas que me auxiliam em diversas tarefas, como realizar anotações, administrar bibliografia, e outras coisas.
+* Porém, a maneira mais flexível de interação com um computador é por meio de linguagens de programação. Elas fazem a intermediação entre o ser humano e a máquina e, preferencialmente, são facilmente lidas por *seres humanos*. A programação no meio científico é uma ferramenta bastante poderosa para auxiliar, dentre outras coisas, na execução de projetos e análise de dados.
+* Mas uma linguagem de programação é somente uma ferramenta. Não faz sentido defender uma ferramenta frente à outra, sem conhecer o contexto da tarefa e da pessoa. Eu, pessoalmente, gosto de programar e automatizar certas tarefas. Acho que os resultados ficam mais organizados, consigo ser mais rigoroso em certas análises, testo mais possibilidades. Mas há sempre um investimento de tempo necessário, tanto para *aprender* quanto para *aplicar*.
+* 
+* Algumas características positivas e negativas sobre utilizar programação num contexto científico
+  * *Pode* poupar muito tempo, como também *pode* ser perda de tempo.
+  * *Pode* permitir realizar várias análises num conjunto de dados
+  * *Pode* permitir trocar algum parâmetro de análise facilmente, e tudo se refazer do zero
+  * *Pode* permitir padronizar formatos de gráfico e tratamento de dados
   * *Pode* ser uma maneira mais legível para o registro de atividades que, p.e., uma planilha do Excel ou um projeto do Origin mas vai depender da sua capacidade de organização também.
     * O problema do Excel e do Origin é que são essencialmente não-lineares. Um script, necessariamente, é executado de "cima para baixo". Porém, se você não tiver o cuidado necessário, jupyter notebooks podem ter um pouco desta não-linearidade. Vamos abordar isso no curso.
   * *Pode* ser uma atividade divertida, mas *pode* ser bastante frustrante.
@@ -54,13 +57,13 @@
 
 ### Primeiro script, para verificar se tudo está correto.
 
-* Se você instalou localmente, faça o seguinte:
-  * Inicie uma instância do interpretador
-    * Python puro: abra um `shell` digitando na barra de pesquisa `cmd` ou `powershell`, clique no ícone, depois digite `python`, aperte Enter.
-    * Anaconda (miniconda): Em iniciar, encontre o `Anaconda Prompt` e clique, digite `python`, aperte Enter.
-    * Thonny: Abra o editor.
-    * Nuvem: crie um novo notebook, e uma célula no notebook.
-  * Digite o seguinte código:
+
+* Inicie uma instância do interpretador
+  * Python puro: abra um `shell` digitando na barra de pesquisa `cmd` ou `powershell`, clique no ícone, depois digite `python`, aperte Enter.
+  * Anaconda (miniconda): Em iniciar, encontre o `Anaconda Prompt` e clique, digite `python`, aperte Enter.
+  * Thonny: Abra o editor.
+  * Nuvem: crie um novo notebook, e depois uma célula no notebook.
+* Digite o seguinte código:
   
 ```python
 print("Hello world!")
