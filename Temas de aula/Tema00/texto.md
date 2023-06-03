@@ -160,15 +160,20 @@ print("Hello world!")
   * https://the-turing-way.netlify.app/index.html
   * https://merely-useful.tech/py-rse/index.html
   * https://coderefinery.org/lessons/core/#self-study-workshop
+  * https://weisscharlesj.github.io/SciCompforChemists/intro.html
 * Ferramentas
   * www.regex101.com - auxilia na elaboração de expressões regulares
   * https://pythontutor.com/ - auxilia na visualização de conceitos
   * www.hackerrank.com, https://leetcode.com/, https://adventofcode.com/ - Coleção de problemas para prática, de simples a complexos
 * Artigos e livros
   * https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510
-  * Automating the Boring Stuff with Python
+  * [Automating the Boring Stuff with Python](https://automatetheboringstuff.com/)
+  * [Python data science handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+  * [Fluent Python](https://www.fluentpython.com/) - conteúdo muito bom, mas mais apropriado para usuários intermediários-avançados.
 * Cursos
-  * https://www.coursera.org/learn/python - curso que eu fiz para aprender sobre o tema.
+  * [Python for Everybody](https://www.coursera.org/learn/python) - gratuito para testar - curso que eu fiz para aprender sobre o tema.
+  * [Automate the Boring Stuff with Python](https://www.udemy.com/course/automate/) - frequentemente fica gratuito.
+  * 
 * Youtube
   * Arjancodes
   * mcoding
@@ -176,8 +181,3 @@ print("Hello world!")
   * https://www.youtube.com/watch?v=v8o-7UICRNk e outros vídeos de conferências de Python (p.e. PyCon)
   * Um dos problemas envolvendo precisão de números de ponto flutuante: https://www.youtube.com/watch?v=nYDmBdUalgo
   * 
-
-### Livros
-
-
-
