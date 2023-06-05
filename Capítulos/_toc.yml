@@ -4,6 +4,6 @@
 format: jb-book
 root: intro
 chapters:
-- file: Tema00/Introdução
-- file: Tema01/Aula 01 - Hello world, strings, obtendo ajuda
-- file: Tema02/Aula 02 - Operações matemáticas, variáveis
+- file: Capítulo00/texto
+- file: Capítulo01/Hello world, strings, obtendo ajuda
+- file: Capítulo02/Operações matemáticas, variáveis

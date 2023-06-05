@@ -3,3 +3,4 @@ jupyter-book
 jupytext
 black
 ghp-import
+myst-nb
