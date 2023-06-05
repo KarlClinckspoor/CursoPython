@@ -1,0 +1,17 @@
+﻿matplotlib
+pandas
+numpy
+jupyterlab
+sphinx
+xlsxwriter
+pyautogui
+Pillow
+palettable
+wordcloud
+sympy
+uncertainties
+pint
+statsmodels
+lmfit
+scipy
+python-docx

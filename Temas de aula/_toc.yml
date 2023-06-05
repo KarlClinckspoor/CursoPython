@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Tema00/Introdução
+- file: Tema01/Aula 01 - Hello world, strings, obtendo ajuda
+- file: Tema02/Aula 02 - Operações matemáticas, variáveis
