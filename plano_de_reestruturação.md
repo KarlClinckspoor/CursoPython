@@ -159,16 +159,3 @@ melhores práticas.
   instruções, não avança. Organização do código e limpeza serão avaliados juntos. Por fim, tudo
   será ponderado pela dificuldade. Se ficou barrado em alguma etapa, eu aviso e vc pode refazer
   ou consertar o problema, que reviso a nota. Sobre dificuldade do 
-
-
-
-
-
-
-
-
-
-
-
-
-

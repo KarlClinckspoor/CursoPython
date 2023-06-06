@@ -33,7 +33,7 @@ A maneira mais flexível de interação com um computador é por meio da program
 * [Mathematica](https://www.wolfram.com/mathematica/) (focada em pesquisa matemática)
 * [Maple](https://www.maplesoft.com/products/Maple/) (focada em pesquisa matemática)
 
-Uma linguagem de programação é somente uma ferramenta. Não faz sentido defender uma ferramenta frente à outra, sem conhecer o contexto da tarefa e da pessoa[^1]. Eu, pessoalmente, me especializei em Python pois é uma linguagem genérica, e me permite realizar outras tarefas sem necessitar aprender uma linguagem nova. Não é a língua perfeita para tudo, mas é capaz o suficiente para resolver muitos problemas. E, ao utilizar Python para tratamento de dados, achei que os resultados ficaram mais organizados e reprodutíveis, e consigo ser mais flexível em minhas análises. Acredito que ploto dezenas a uma de gráficos antes de encontrar um que me satisfaz, algo que seria bastante oneroso se feito com as ferramentas tradicionais[^2].
+Uma linguagem de programação é somente uma ferramenta. Não faz sentido defender uma ferramenta frente à outra, sem conhecer o contexto da tarefa e da pessoa. *A tarefa dita a ferramenta que precisa ser utilizada*. Se Python não for uma boa escolha para a tarefa, busque outra ferramenta. Não seja extremista.[^1]. Eu, pessoalmente, me especializei em Python pois é uma linguagem genérica, e me permite realizar outras tarefas sem necessitar aprender uma linguagem nova. Não é a língua perfeita para tudo, mas é capaz o suficiente para resolver muitos problemas. E, ao utilizar Python para tratamento de dados, achei que os resultados ficaram mais organizados e reprodutíveis, e consigo ser mais flexível em minhas análises. Acredito que ploto dezenas a uma de gráficos antes de encontrar um que me satisfaz, algo que seria bastante oneroso se feito com as ferramentas tradicionais[^2].
 
 [^1]: Não tolerarei *flamewars* sobre linguagens.
 [^2]: Excel e OriginPro possuem maneiras de automatização. O primeiro pode ser automatizado por [VBA](https://learn.microsoft.com/pt-br/office/vba/library-reference/concepts/getting-started-with-vba-in-office) e [TypeScript](https://learn.microsoft.com/en-us/office/dev/scripts/develop/scripting-fundamentals) na versão web, e o [segundo possui várias interfaces com outras linguagens, inclusive Python](https://www.originlab.com/doc/Programming). Nunca me aprofundei em nenhum dos dois, mas podem ser ferramentas poderosas se utilizadas corretamente.
@@ -86,90 +86,131 @@ Por exemplo, a curva do esquecimento de Ebbinghaus mostra o quanto conseguimos r
 
 Note que cerca de algumas horas após aprender alguma coisa, já é capaz de termos esquecido 60% da informação. Porém, a repetição espaçada (com um espaçamento adequado, como 1 dia, 1 semana e 1 mês) pode permitir-lhe relembrar de informação com maior eficiência, pois torna a curva de Ebbinghaus menos abrupta. 
 
-Se você já têm experiência com outras linguagens, aprender uma nova é muito mais fácil - desde que a abordagem da linguagem é similar. Isso é chamado de transferência positiva. Se tiverem curiosidade, procurem depois por APL, Lisp e Haskell para verem algumas abordagens diferentes a Python, que podem causar muita transferência negativa.
+Se você já têm experiência com outras linguagens, aprender uma nova é, geralmente, muito mais fácil, pelo processo de transferência positiva. Se tiverem curiosidade, procurem depois por APL, Lisp e Haskell para verem algumas abordagens diferentes a Python.
 
-* Algumas vezes, uma mudança de perspectiva se torna essencial para conseguir resolver problemas, especialmente de programação. Por exemplo: Suponha que há um trêm saindo de Campinas e indo a São Paulo, a 100 km de distância, e outro trêm indo na direção oposta e partindo no mesmo horário. Ambos os trêns avançam na velocidade de 25 km/h. Uma andorinha vai e volta entre os trêns, partindo de Campinas, e voa a 50 km/h. Qual será a distância total percorrida pela andorinha quando os trêns se encontrarem? Uma solução inicial seria modelar as velocidades e posições dos três objetos e resolver o conjunto de equações envolvidas. Porém, se você notar que os trêns se encontram em 2 horas, no meio do caminho, sabemos que a andorinha teve que percorrer 100 km, pois voou continuamente por 2 horas.
-* Problemas em programação são frequentemente resolvidos da seguinte maneira: Para resolver um grande e complexo problema, irei subdividi-lo em problemas menores e mais simples, até que saiba resolver todos os mini-problemas. Apesar de uma descrição simples, tal tarefa demanda experiência.
+Um fator que pode dificultar o aprendizado é a mudança de perspectiva necessária para resolver os problemas da maneira que a linguagem permite. Isso vale para outras áreas também.[^4] Problemas em programação são frequentemente resolvidos da seguinte maneira: subsivisão do problema em partes cada vez menores e mais simples, resolver os mini-problemas, depois montar tudo de volta.
+
+[^4]: Por exemplo: Suponha que há um trêm saindo de Campinas e indo a São Paulo, a 100 km de distância, e outro trêm indo na direção oposta e partindo no mesmo horário. Ambos os trêns avançam na velocidade de 25 km/h. Uma andorinha vai e volta entre os trêns, partindo de Campinas, e voa a 50 km/h. Qual será a distância total percorrida pela andorinha quando os trêns se encontrarem? Uma solução inicial seria modelar as velocidades e posições dos três objetos e resolver o conjunto de equações envolvidas. Porém, se você notar que os trêns se encontram em 2 horas, no meio do caminho, sabemos que a andorinha teve que percorrer 100 km, pois voou continuamente por 2 horas.
 
 ## Por que Python?
 
-* Python ganhou muita popularidade em tempos recentes com o boom da inteligência artificial, aprendizado de máquina e ciência de dados. É uma uma linguagem acessível, gratuita, multi-paradigma, multi-plataforma, com uma sintaxe clara, e sem grandes complicações com o sistema de tipos. Possui uma quantidade grande de pacotes gratuitos, para uma enorme variedade de finalidades.
-* É uma das linguagens mais populares entre aqueles que estão aprendendo a programar, e popular também entre programadores mais experientes [fonte](https://survey.stackoverflow.co/2022/#most-popular-technologies-language-learn), atrás somente de linguagens voltadas à web (p.e. Javascript). Possui uma grande comunidade de suporte e muita gente trabalhando para que sempre melhore.
-* Não é uma linguagem sem falhas. Tarefas com uma alta necessidade de performance vão requerer abordagens diferentes, pois podem ser muito lentas em Python. Porém, há várias alternativas para contornar isso, como [Cython](https://cython.org/), [Numba](https://numba.pydata.org/) e [extensões para C e C++](https://docs.python.org/3/extending/extending.html). Porém, para as finalidades científicas cotidianas, é plenamente viável. Note também que o seu tempo é mais valioso que o tempo do computador. Uma tarefa demorar 3 segundos para ser executada em Python vs 3 millisegundos em C++ é, para nós, plenamente aceitável, visto que o tempo necessário para escrever o código em Python é significativamente menor (contanto exploração e compilação).
-* *A tarefa dita a ferramenta que precisa ser utilizada*. Se Python não for uma boa escolha para a tarefa, busque outra ferramenta. Não seja extremista.
+Python ganhou muita popularidade em tempos recentes com o boom da inteligência artificial, aprendizado de máquina e ciência de dados. É uma uma linguagem acessível, gratuita, multi-paradigma, multi-plataforma, com uma sintaxe clara, e sem grandes complicações com o sistema de tipos. Possui uma quantidade grande de pacotes gratuitos, para uma enorme variedade de finalidades, e funciona muito bem como uma linguagem de junta várias outras.
 
+Além disso, é uma das linguagens mais populares entre aqueles que estão aprendendo a programar, e popular também entre programadores mais experientes [fonte](https://survey.stackoverflow.co/2022/#most-popular-technologies-language-learn), atrás somente de linguagens voltadas à web (p.e. Javascript). Possui uma grande comunidade de suporte e muita gente trabalhando para que sempre melhore.
+
+Porém, não é uma linguagem sem falhas. Tarefas com uma alta necessidade de performance vão requerer abordagens diferentes, pois podem ser muito lentas em Python. Porém, há várias alternativas para contornar isso, como [Cython](https://cython.org/), [Numba](https://numba.pydata.org/) e [extensões para C e C++](https://docs.python.org/3/extending/extending.html). Porém, para as finalidades científicas cotidianas, é plenamente viável. Note também que o seu tempo é mais valioso que o tempo do computador. Uma tarefa demorar 3 segundos para ser executada em Python vs 3 millisegundos em C++ é, para nós, plenamente aceitável, visto que o tempo necessário para escrever o código em Python é significativamente menor (contanto exploração e compilação).
 
 ## Fluxograma de trabalho com Python
 
 A maneira para trabalhar com Python é a seguinte:
 
-1. Escrever código em um arquivo de texto (extensão `.py`).
+1. Escrever código em um arquivo de texto (p.e. extensão `.py`).
 2. Enviar texto para o executável (`python.exe`)
 3. Avaliar o resultado. Não está bom? Volta a escrever
 4. Se está bom, exportar os resultados se necessário
 
 Que pode ser resumida neste ![Fluxograma](./imagens/Fluxograma.png).
 
-Muitas linguagens de programação (p.e. C++) requerem que o código fonte passe por um longo processo antes que você consiga vê-lo sendo executado e obter o resultado. Diferente de várias outras linguagens, Python possui um "interpretador interativo" (REPL - **R**ead **E**valuate **P**rint **L**oop), que mistura as etapas 1 e 2 do fluxograma, que permite-lhe explorar a linguagem e realizar qualquer tarefa em tempo real. É isso que o torna ideal para análises exploratórias de dados. Uma mesma análise feita em C++ necessitaria da constante compilação do código e realização da análise *do zero*, que pode demorar muito.
+Para um trabalho científico, que é muito iterativo e exploratório, esse fluxograma é inconveniente, porque o "estado do sistema" é sempre reconstruído quando o arquivo de texto é passado ao executável, isto é, todos os comandos são executados mesmo se você fizer uma mudança pequena.
 
-Porém, utilizar o REPL torna-se rapidamente inconveniente se a edição de texto for minimamente mais complexa que uma função simples, e também se você desejar replicar os comandos executados outro dia. Uma ferramenta foi desenvolvida que mescla um editor de texto com o REPL, e foi batizado *Jupyter notebook* (em homenagem a **Ju**lia, **Pyt**hon e **R**), que será muito utilizado neste curso. O arquivo é organizado em células, que podem conter tanto texto quanto código, e cada célula de código possui um espaço para o *output* do código, como um gráfico ou uma tabela. Assim, é possível escrever o código, comentários sobre o código e as respostas tudo em um único local. A desvantagem deste tipo de arquivo é que *pode* introduzir mais hábitos de programação, e esse tema será abordado numa etapa futura do curso.
+Porém, python possui um "interpretador interativo" (REPL - **R**ead **E**valuate **P**rint **L**oop), que mistura as etapas 1 e 2 do fluxograma, que permite-lhe explorar a linguagem e realizar qualquer tarefa em tempo real, preservando o estado do sistema. Isso o torna ideal para análises exploratórias de dados.
 
-### Com o que escrever scripts Python
+Porém, utilizar o REPL torna-se rapidamente inconveniente se a edição de texto for minimamente mais complexa que uma função simples, e também se você desejar replicar os comandos executados outro dia. Uma ferramenta foi desenvolvida que mescla um editor de texto com o REPL, e foi batizado *Jupyter notebook* (em homenagem a **Ju**lia, **Pyt**hon e **R**), que será muito utilizado neste curso. O arquivo notebook é organizado em células, que podem conter tanto texto ou código, e cada célula de código possui um espaço para o *output* do código, como texto, gráficos ou tabelas. A desvantagem deste tipo de arquivo é que *pode* introduzir mais hábitos de programação, e a reutilização de código se torna inconveniente. Não é impossível, mas é complicado importar arquivos notebook em outros arquivos.
 
-* Editores de texto simples (bloco de notas), mas não é recomendado, pois faltam várias características desejadas.
-* Editores de texto como **Thonny**, Visual Studio Code, Sublime Text. São mais avançados, possuem ferramentas para autocompletação de código e realce de linguagem. **Visual Studio Code** é muito famoso e certamente o mais popular de todos citado aqui. VSCode possui suporte nativo a jupyter notebooks, mas os outros não possuem nenhum suporte.
-* IDEs como **PyCharm** Community Edition (quem possui email educacional pode solicitar uma licença para a versão Professional gratuitamente) e Visual Studio. Possuem muitas ferramentas que auxiliam muito na elaboração de projetos mais complexos. Pecam no suporte para Jupyter Notebooks.
+Neste curso, ambos os métodos serão abordados. Jupyter notebooks para análise exploratória, arquivos .py e pacotes para consolidação.
 
-### Como rodar scripts Python
+## Instalação e uso de Python
 
-* Para rodar um script, é necessário ter o executável Python (`python.exe`) com os pacotes necessários acessíveis pelo executável. O executável pode estar tanto no seu computador, como na rede ou na nuvem. 
-* A opção mais fácil é utilizar ferramentas da nuvem, mas há uma série de restrições e chateações quando se faz isso, começando pela lentidão e complicação para colocar seus dados junto da nuvem. Instalar localmente é, de forma geral, a maneira mais robusta de se utilizar a ferramenta.
-* É necessário ter algum conhecimento de **linha de comando** para utilizar python e as ferramentas. Os *shells* comumente utilizados em Windows são `cmd.exe` e `powershell.exe`. Felizmente, os comandos que precisam ser utilizados frequentemente são poucos e simples. Aqui vai uma lista básica:
-  * `cd <dir>` muda o diretório para `<dir>`. Por exemplo: `cd Downloads`, `cd ..` (`..` significa o diretório pai).
-  * `dir` (ou também `ls` no powershell) lista os arquivos na pasta atual.
-  * `explorer .` abre uma pasta do explorer no diretório atual (`.` significa diretório atual). Assim, tarefas mais complexas como criar pastas, renomear arquivos, etc, podem ser feitas pelo explorer.
-  * Os comandos específicos para cada programa serão abordados em suas respectivas seções.
+Minha **recomendação pessoal** é a instalação local com Anaconda, ou Thonny para as primeiras aulas, seguido de Anaconda.
 
-### Como instalar
+### Instalação local
 
-* Utilizando o instalador do site [python.org], versão 3.11 ou mais recente
-  * Pacote básico, não precisa de permissão de administrador
+A instalação local é mais trabalhosa para fazer funcionar, mas é mais rápida e mais customizável que as soluções on-line. Recomendo.
+
+* Utilizando o instalador do [site oficial](python.org), versão 3.11 ou mais recente.
 * Utilizando o instalador [Anaconda](https://www.anaconda.com/download/) (ou [miniconda](https://docs.conda.io/en/latest/miniconda.html))
   * Pacote voltado para ciência de dados. Já vem com vários pacotes pré-instalados e um gerenciador de pacotes próprio, o conda, que é mais poderoso que o nativo, pip. Não precisam de permissão de administrador.
   * Anaconda vem com várias coisas extras que podem ser úteis para você. Miniconda é mais recomendado se você só quer uma instalação básica e irá criar seus ambientes depois. Para este curso, o Anaconda é mais recomendado.
-* [Thonny](https://thonny.org/), um editor que já vem com sua instalação python própria.
-* Ferramentas online
-  * https://replit.com/ - Tem planos gratuitos para criar alguns projetos. Funciona a base de arquivos .py e não de notebooks. Bastante lento na minha opinião, não servirá para muitas coisas além do mais básico do começo.
-  * https://www.online-python.com/ - Este é OK para o começo, mas quando avançarmos a temas mais relevantes, principalmente quanto tivermos que utilizar pacotes científicos, é melhor utilizar outras opções.
-  * Online, baseado em jupyter notebooks
-  * Google Colab - ferramenta padrão para notebooks online.
-  * JetBrains Datalore - tem planos gratuitos para iniciantes.
-  * [Jupyter Lite](https://jupyter.org/try-jupyter/lab/)
+* Utilizando [Thonny](https://thonny.org/), um editor que já vem com sua instalação python própria.
 
-* **Recomendação**: Anaconda, ou Thonny seguido de Anaconda.
+### Ferramentas online
+
+Existem várias ferramentas para a execução online de scripts e notebooks. Uma das maiores desvantagens é a relativa chateação para subir os seus arquivos para serem acessíveis às ferramentas. Se você possuir muitos arquivos, ou forem muito grandes, não conseguirá utilizar essas ferramentas convenientemente.
+
+* https://replit.com/ - Tem planos gratuitos para criar alguns projetos. Funciona a base de arquivos .py e não de notebooks. Bastante lento na minha opinião, não servirá para muitas coisas além do mais básico do começo.
+* https://www.online-python.com/ - Este é OK para o começo, mas quando avançarmos a temas mais relevantes, principalmente quanto tivermos que utilizar pacotes científicos, é melhor utilizar outras opções.
+* Online, baseado em jupyter notebooks
+* Google Colab - ferramenta padrão para notebooks online.
+* JetBrains Datalore - tem planos gratuitos para iniciantes.
+* [Jupyter Lite](https://jupyter.org/try-jupyter/lab/)
 
 ### Primeiro script, para verificar se tudo está correto.
 
-* Inicie uma instância do REPL
+* Inicie uma instância do REPL ou um novo notebook.
   * Python puro: abra um `shell` digitando na barra de pesquisa `cmd` ou `powershell`, clique no ícone, depois digite `python`, aperte Enter.
   * Anaconda (miniconda): Em iniciar, encontre o `Anaconda Prompt` e clique, digite `python`, aperte Enter.
   * Thonny: Abra o editor.
   * Nuvem: crie um novo notebook, e depois uma célula no notebook.
-* Digite o seguinte código:
+* Escreva o seguinte código:
 
 ```{code-cell} ipython3
 print("Hello world!")
 ```
 
-  * Aperte Enter (ou Shift+Enter nos notebooks). Se a mensagem `Hello world!` aparecer logo em seguida, tudo está funcionando direito.
-  * Se, ao digitar `python` no `shell` e aparecer um erro de que o comando não foi encontrado, você possui um problema na variável `PATH` de ambiente. Siga [este](https://realpython.com/add-python-to-path/) tutorial caso isso ocorra.
+* Aperte Enter (ou Shift+Enter nos notebooks). Se a mensagem `Hello world!` aparecer logo em seguida, tudo está funcionando direito.
+* Se, ao digitar `python` no `shell` e aparecer um erro de que o comando não foi encontrado, você possui um problema na variável `PATH` de ambiente. Siga [este](https://realpython.com/add-python-to-path/) tutorial caso isso ocorra.
+
+### Com o que escrever scripts Python
+
+No caso de scripts e notebooks locais, existem três níveis de complexidade para os softwares de edição de código:
+
+* Editores de texto simples (bloco de notas), mas não é recomendado, pois faltam várias características desejadas.
+* Editores de texto avançados, como **Thonny**, Visual Studio Code, Sublime Text, Spyder. São mais avançados, possuem ferramentas para autocompletação de código e realce de linguagem. **Visual Studio Code** é muito famoso e certamente o mais popular de todos citado aqui. VSCode possui suporte nativo a jupyter notebooks, mas os outros não possuem nenhum suporte. Spyder vem instalado com o pacote `Anaconda` e é voltado à computação científica e ciência de dados.
+* Jupyter lab, uma ferramenta para o navegador que permite editar notebooks e arquivos .py em uma variedade de linguagens, desde que configurado corretamente. Já vem instalado no pacote `Anaconda`, e pode ser iniciado com o comando `jupyter lab` no shell.
+* IDEs (Integrated Development Environment) como **PyCharm** Community Edition (quem possui email educacional pode solicitar uma licença para a versão Professional gratuitamente) e Visual Studio. Possuem muitas ferramentas que auxiliam muito na elaboração de projetos mais complexos. Pecam no suporte para Jupyter Notebooks e computação científica de forma geral.
+
+Minha recomendação pessoal é começar com editores avançados até aprender bem os fundamentos da linguagem. Quando quiser desenvolver projetos mais complexos, passar para IDEs. Selecione qualquer um dessas ferramentas, crie um novo arquivo chamado `hello_world.py` e coloque o código que utilizamos anteriormente como teste:
+
+```{code-cell} ipython3
+print("Hello world!")
+```
+
+### Como rodar scripts Python
+
+Para rodar um script, é necessário ter o executável Python (`python.exe`) com os pacotes necessários acessíveis pelo executável. O executável pode estar tanto no seu computador, como na rede ou na nuvem. A opção mais fácil é utilizar ferramentas da nuvem, mas há uma série de restrições e chateações quando se faz isso, começando pela lentidão e complicação para colocar seus dados junto da nuvem. Instalar localmente é, de forma geral, a maneira mais robusta de se utilizar a ferramenta.
+
+É necessário ter algum conhecimento de **linha de comando** para utilizar python e as ferramentas. Os *shells* comumente utilizados em Windows são `cmd.exe` e `powershell.exe`. Felizmente, os comandos que precisam ser utilizados frequentemente são poucos e simples. Os comandos específicos para cada programa serão abordados em suas respectivas seções. Aqui vai uma lista básica dos comandos para os shells do Windows.:
+* `cd <dir>` muda o diretório para `<dir>`. Por exemplo: `cd Downloads`, `cd ..` (`..` significa o diretório pai).
+* `dir` (ou também `ls` no powershell) lista os arquivos na pasta atual.
+* `explorer .` abre uma pasta do explorer no diretório atual (`.` significa diretório atual). Assim, tarefas mais complexas como criar pastas, renomear arquivos, etc, podem ser feitas pelo explorer.
+
+Suponha que você está na pasta `C:\` e deseja rodar o arquivo `analysis.py` em `C:\Scripts`. Para isso, utilize os seguintes comandos:
+
+* `cd ./Scripts`
+* `python ./analysis.py`
+
+Note que neste exemplo, o script `analysis.py` será rodado tendo como *pasta de trabalho* `C:\Scripts`. O conceito de pasta de trabalho é bastante relevante, pois muitas vezes escrevemos scripts baseados em *caminhos relativos*, que são relativos, por exemplo, à sua *pasta de trabalho*. Tais caminhos relativos são construídos com `.` e `..`, já mencionados anteriormente. O contrário de um caminho relativo é o *caminho absoluto*, que é rígido, mas preciso. Por exemplo, `C:\Scripts` se refere somente à essa pasta, mas `./Scripts` pode se referir a qualquer pasta `Scripts` dentro de outra, não só em `C:\`.
+
+Se você criar um script com caminhos absolutos, ele irá funcionar somente nos locais especificados. Já se você utilizar caminhos relativos, a flexibilidade do seu código será maior. Por exemplo, suponha que você crie um script que analisa todos os arquivos `.csv` de uma pasta. Se você configurá-lo para analisar todos os arquivos com um caminho absoluto, terá que modificar o script toda vez que alterar o local dos arquivos. Se utilizar um caminho relativo, poderá ir com o *shell* ao diretório desejado e invocar o script de lá. O local onde o *shell* está é a *pasta de trabalho*, e os caminhos relativos do código se referirão à essa pasta.
+
+Por exemplo, caso queira rodar `analysis.py` na pasta `C:\Dados`, você pode usar os seguintes comandos:
+
+* `cd C:\Dados`
+* `python ..\Scripts\analysis.py` ou `python C:\Scripts\analysis.py`.
+
+Iremos trabalhar também com o uso de argumentos de linha de comando. Assim, as invocações feitas anteriormente podem ser ainda mais flexíveis, necessitando somente de `python C:\Scripts\analysis.py C:\Dados`, sem precisar alterar o seu diretório.
+
+Tente navegar no *shell* até o local do script `hello_world.py` criado na etapa anterior e tente rodá-lo com Python.
 
 ## Estrutura do curso
 
-* Infelizmente, para podermos partir para exemplos de utilidade real, precisamos passar pelo aprendizado dos básicos. Isso constituirá a maior parte das aulas no começo. Descrições de variáveis, tipos, funções, loops (laços), condicionais e instalação e uso de pacotes serão abordados nessa etapa inicial. Os conceitos serão consolidados com alguns exemplos reais e inventados.
-* Depois disso, passaremos para a resolução de exemplos reais junto com a introdução de certos pacotes mais utilizados na área científica, como `pandas`, `numpy`, `matplotlib`. Algumas vezes a solução "manual" será apresentada antes da solução feita pelo pacote, para entendermos melhor as funções empregadas. À medida que avançamos com os exemplos e nossa maturidade crescer, temas mais avançados serão abordados.
-* Depois disso, passaremos para exemplos reais que utilizam várias técnicas ao mesmo tempo. Será fornecida uma descrição do problema e de conceitos necessários para resolvê-lo, junto com uma lista das técnicas e pacotes recomendados. A solução é fornecida, mas o objetivo é que você tente resolvê-los por conta própria, e depois comparar com as minhas soluções. Na medida do possível, utilizarei as melhores práticas que conheço nas resoluções que fornecerei.
-* Após isso, com uma boa maturidade, abordaremos algumas questões de clareza e coesão de código, boas práticas, controle de versão e ambientes virtuais serão abordadas nesta etapa. Entraremos numa pequena tangente sobre como consolidar seu conhecimento em um pacote próprio que pode ser importado em arquivos futuros, como deixar seu pacote robusto com unit-tests, como escrever documentação e auto-gerar uma página com sphinx. Por fim, algumas palavras serão tecidas sobre como estruturar um estudo. Tudo será acompanhado de controle de versão com git. Cientistas, infelizmente, possuem a má fama de terem códigos ininteligíveis e mal estruturados. Pretendo que isso não seja uma crítica válida para vocês.
+Para podermos partir para exemplos de utilidade real, precisamos passar pelo aprendizado dos básicos. Isso constituirá a maior parte das aulas no começo. Descrições de variáveis, tipos, funções, loops (laços), condicionais e instalação e uso de pacotes serão abordados nessa etapa inicial. Os conceitos serão consolidados com alguns exemplos reais e fabricados.
+
+Depois disso, passaremos para a resolução de exemplos reais junto com a introdução de certos pacotes mais utilizados na área científica, como `pandas`, `numpy`, `matplotlib`. Algumas vezes a solução "manual" será apresentada antes da solução feita pelo pacote, para entendermos melhor as funções empregadas. À medida que avançamos com os exemplos e nossa maturidade crescer, temas mais avançados serão abordados.
+
+Depois disso, passaremos para exemplos reais que utilizam várias técnicas ao mesmo tempo. Será fornecida uma descrição do problema e de conceitos necessários para resolvê-lo, junto com uma lista das técnicas e pacotes recomendados. A solução é fornecida, mas o objetivo é que você tente resolvê-los por conta própria, e depois comparar com as minhas soluções. Na medida do possível, utilizarei as melhores práticas que conheço nas resoluções que fornecerei.
+
+Após isso, com uma boa maturidade, abordaremos algumas questões de clareza e coesão de código, boas práticas, controle de versão e ambientes virtuais serão abordadas nesta etapa. Entraremos numa pequena tangente sobre como consolidar seu conhecimento em um pacote próprio que pode ser importado em arquivos futuros, como deixar seu pacote robusto com unit-tests, como escrever documentação e auto-gerar uma página com sphinx. Por fim, algumas palavras serão tecidas sobre como estruturar um estudo. Tudo será acompanhado de controle de versão com git. Cientistas, infelizmente, possuem a má fama de terem códigos ininteligíveis e mal estruturados. Pretendo que isso não seja uma crítica válida para vocês.
 
 ## Avaliação final
 
@@ -194,11 +235,10 @@ print("Hello world!")
 ## Ajuda e material de referência
 
 * Sites de pergunta e resposta:
-  * /r/pythonprogramming
-  * /r/learnprogramming
+  * Reddit /r/pythonprogramming
+  * Reddit /r/learnprogramming
   * Python discord https://discord.gg/python
   * Stackoverflow
-    * Cuidados com este em especial, na hora de fazer perguntas
   * ChatGPT
 * Sites com material escrito
   * https://docs.python.org/3/
@@ -221,15 +261,9 @@ print("Hello world!")
 * Cursos
   * [Python for Everybody](https://www.coursera.org/learn/python) - gratuito para testar - curso que eu fiz para aprender sobre o tema.
   * [Automate the Boring Stuff with Python](https://www.udemy.com/course/automate/) - frequentemente fica gratuito.
-  * 
 * Youtube
   * Arjancodes
   * mcoding
-  * https://www.youtube.com/playlist?list=PLpLblYHCzJACqaFsfQiCWp0Wqy6qG4iau
-  * https://www.youtube.com/watch?v=v8o-7UICRNk e outros vídeos de conferências de Python (p.e. PyCon)
+  * Workshops e outros cursos online, como https://www.youtube.com/playlist?list=PLpLblYHCzJACqaFsfQiCWp0Wqy6qG4iau
+  * https://www.youtube.com/watch?v=v8o-7UICRNk e outros vídeos de conferências de Python (p.e. PyCon). Frequentemente há tutoriais longos sobre diversos temas e pacotes, inclusive para iniciantes em Python.
   * Um dos problemas envolvendo precisão de números de ponto flutuante: https://www.youtube.com/watch?v=nYDmBdUalgo
-  *
-
-## Agradecimentos
-
-TODO
