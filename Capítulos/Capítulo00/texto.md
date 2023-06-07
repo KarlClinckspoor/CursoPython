@@ -174,7 +174,7 @@ No caso de scripts e notebooks locais, existem três níveis de complexidade par
 
 Minha recomendação pessoal é começar com editores avançados até aprender bem os fundamentos da linguagem. Quando quiser desenvolver projetos mais complexos, passar para IDEs. Selecione qualquer um dessas ferramentas, crie um novo arquivo chamado `hello_world.py` e coloque o código que utilizamos anteriormente como teste:
 
-```{code-cell} ipython3
+```python
 print("Hello world!")
 ```
 
@@ -205,13 +205,19 @@ Iremos trabalhar também com o uso de argumentos de linha de comando. Assim, as 
 
 Tente navegar no *shell* até o local do script `hello_world.py` criado na etapa anterior e tente rodá-lo com Python.
 
-## Instalação dos pacotes deste curso
+## Acompanhando o curso interativamente
 
-Antes de prosseguirmos, seria conveniente instalarmos os pacotes necessários para este curso. Já preparei um arquivo para isso chamado `requirements.txt`, que está na raiz (pasta base) do repositório deste livro/curso. Baixe o repositório pela interface do github (clicando no botão verde `Code` depois em `Download Zip`) e extraia o conteúdo em uma pasta apropriada. Navegue com o *shell* até a pasta com o conteúdo (ou clique na barra de navegação do windows explorer e digite `powershell` e aperte enter), e escreva o seguinte comando:
+Caso você queira, você pode acompanhar o conteúdo do curso por meio dos jupyter notebooks fornecidos, modificá-los e fazer os exercícios contidos neles. Para isso será necessário instalar todos os pacotes necessários para seguir os exemplos. Já preparei um arquivo para isso chamado `requirements.txt`, que está na raiz (pasta base) do repositório deste livro/curso. Baixe o repositório pela interface do github (clicando no botão verde `Code` depois em `Download Zip`) e extraia o conteúdo em uma pasta apropriada. Navegue com o *shell* (Anaconda shell ou powershell, dependendo da maneira de instalação) até a pasta com o conteúdo do curso, e escreva o seguinte comando:
 
 `pip install -r requirements.txt`
 
 O significado deste documento será explorado mais para frente. Uma quantidade significativa de texto irá aparecer em sua tela, mas não se preocupe. Se houver alguma pergunta, apenas escreva `y` e aperte enter para continuar.
+
+Com tudo instalado, você pode abrir a interface do Jupyter Lab com o comando `jupyter lab`. Isso irá abrir uma aba no seu navegador com a interface do *Jupyter lab*, e aqui pode abrir e modificar os notebooks. Se você possuir a licença do Pycharm Professional ou estiver utilizando o VSCode com as extensões apropriadas, pode abrir os notebooks diretamente nesses programas, sem utilizar o *Jupyter lab*.
+
+```{warning}
+Gerenciamento de pacotes e *kernels* é uma tarefa, infelizmente, um pouco complicada. É possível que você abra os notebooks em outros programas, ou em outros ambientes virtuais python ou conda (mais informações serão fornecidas depois) e não consiga importar um pacote que você tem certeza que instalou. Se isso ocorrer, entre em contato. São muitos problemas que podem causar isso, visto que deixei bem aberto a maneira de interagir com os notebooks. Se você seguir os passos recomendados aqui, não deverá ter problemas.
+```
 
 ## Estrutura do curso
 
@@ -285,4 +291,4 @@ Aprender a programar é muito mais fácil com alguém para lhe ajudar. Esta é u
   * Arjancodes, mcoding: material mais avançado
   * Workshops e outros cursos online, como https://www.youtube.com/playlist?list=PLpLblYHCzJACqaFsfQiCWp0Wqy6qG4iau
   * Canais de conferências como [PyCon US](https://www.youtube.com/@PyConUS) e [pythonbrasil](https://www.youtube.com/@pythonbrasiloficial/videos). Frequentemente há tutoriais longos sobre diversos temas e pacotes, [inclusive para iniciantes em Python](https://www.youtube.com/watch?v=v8o-7UICRNk).
-  * Um dos problemas envolvendo precisão de números de ponto flutuante: https://www.youtube.com/watch?v=nYDmBdUalgo
+  * Curiosidade: Um dos problemas envolvendo precisão de números de ponto flutuante: https://www.youtube.com/watch?v=nYDmBdUalgo

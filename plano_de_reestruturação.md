@@ -97,7 +97,7 @@ melhores práticas.
     * Dentro ou fora
     * colunas, tamanho, borda, transparência
     * Legendas com símbolos arbitrários
-* 
+* set color https://stackoverflow.com/questions/44806598/matplotlib-set-color-cycle-versus-set-prop-cycle
 
 ## Pandas
 
@@ -115,47 +115,3 @@ melhores práticas.
 * Conta no github/gitlab
 * Pull requests e colaboração
 * Como lidar com jupyter notebooks
-
-## Referências
-
-* Practical Statistics with R and Python
-* Jake vanderplas
-* programmer's brain
-* Fluent Python
-* Automate the boring stuff with Python
-* data science from scratch (?)
-* Arjancodes, mcoding
-
-## Ajuda
-
-* /r/pythonprogramming
-* /r/learnprogramming
-* Python discord https://discord.gg/python
-* Stackoverflow
-    * Cuidados com este em especial, na hora de fazer perguntas
-* ChatGPT
-* RealPython
-
-## Prova final
-
-* Um repositório git, contendo controle de versão e a evolução do projeto, com instruções
-  para rodá-lo. Pode ser:
-      * Jupyter notebooks utilizados para o tratamento de dados. Neste caso, precisa ser completo,
-        com os dados em si.
-      * Pacote feito para agrupar funcionalidade. Neste caso, precisa de dados e de uma suite de
-        unit-tests e os dados necessários. Precisa ter o setup.py ou pyproject.toml, instalar
-        direto e depois rodar os unit-tests com uma coverage decente (não precisa ser 100%)
-
-* Deve incluir especificações para criação de ambiente virtual, e instruções de como instalar e
-  rodar (p.e. README.md).
-* Avaliação será feita em etapas
-  1. É um projeto de verdade (git ou não)?
-  2. Consigo seguir as instruções e rodar?
-  3. Está organizado?
-  4. O código está limpo? Legível, com bons nomes de função, etc?
-  5. O problema é simples demais? p.e. um hello world não vale. Sobre isso, pode mandar email que
-     eu avalio se é um tema "válido".
-* A avaliação será feita em etapas. Se não for projeto de verdade, não avança. Se não tiver boas
-  instruções, não avança. Organização do código e limpeza serão avaliados juntos. Por fim, tudo
-  será ponderado pela dificuldade. Se ficou barrado em alguma etapa, eu aviso e vc pode refazer
-  ou consertar o problema, que reviso a nota. Sobre dificuldade do 

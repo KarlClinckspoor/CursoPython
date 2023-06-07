@@ -5,5 +5,4 @@ format: jb-book
 root: intro
 chapters:
 - file: Capítulo00/texto
-- file: Capítulo01/Hello world, strings, obtendo ajuda
-- file: Capítulo02/Operações matemáticas, variáveis
+- file: Capítulo01/Operações matemáticas
