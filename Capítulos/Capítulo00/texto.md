@@ -121,13 +121,15 @@ Neste curso, ambos os métodos serão abordados. Jupyter notebooks para análise
 
 ## Instalação e uso de Python
 
+```{note}
 Minha **recomendação pessoal** é a instalação local com Anaconda, ou Thonny para as primeiras aulas, seguido de Anaconda.
+```
 
 ### Instalação local
 
 A instalação local é mais trabalhosa para fazer funcionar, mas é mais rápida e mais customizável que as soluções on-line. Recomendo.
 
-* Utilizando o instalador do [site oficial](python.org), versão 3.11 ou mais recente.
+* Utilizando o instalador do [site oficial](https://www.python.org), versão 3.11 ou mais recente.
 * Utilizando o instalador [Anaconda](https://www.anaconda.com/download/) (ou [miniconda](https://docs.conda.io/en/latest/miniconda.html))
   * Pacote voltado para ciência de dados. Já vem com vários pacotes pré-instalados e um gerenciador de pacotes próprio, o conda, que é mais poderoso que o nativo, pip. Não precisam de permissão de administrador.
   * Anaconda vem com várias coisas extras que podem ser úteis para você. Miniconda é mais recomendado se você só quer uma instalação básica e irá criar seus ambientes depois. Para este curso, o Anaconda é mais recomendado.
@@ -137,28 +139,29 @@ A instalação local é mais trabalhosa para fazer funcionar, mas é mais rápid
 
 Existem várias ferramentas para a execução online de scripts e notebooks. Uma das maiores desvantagens é a relativa chateação para subir os seus arquivos para serem acessíveis às ferramentas. Se você possuir muitos arquivos, ou forem muito grandes, não conseguirá utilizar essas ferramentas convenientemente.
 
-* https://replit.com/ - Tem planos gratuitos para criar alguns projetos. Funciona a base de arquivos .py e não de notebooks. Bastante lento na minha opinião, não servirá para muitas coisas além do mais básico do começo.
-* https://www.online-python.com/ - Este é OK para o começo, mas quando avançarmos a temas mais relevantes, principalmente quanto tivermos que utilizar pacotes científicos, é melhor utilizar outras opções.
+* Online, baseados em arquivos `.py`
+  * https://replit.com/ - Tem planos gratuitos para criar alguns projetos. Funciona a base de arquivos .py e não de notebooks. Bastante lento na minha opinião, não servirá para muitas coisas além do mais básico do começo.
+  * https://www.online-python.com/ - Este é OK para o começo, mas quando avançarmos a temas mais relevantes, principalmente quanto tivermos que utilizar pacotes científicos, é melhor utilizar outras opções.
 * Online, baseado em jupyter notebooks
-* Google Colab - ferramenta padrão para notebooks online.
-* JetBrains Datalore - tem planos gratuitos para iniciantes.
-* [Jupyter Lite](https://jupyter.org/try-jupyter/lab/)
+  * Google Colab - ferramenta padrão para notebooks online.
+  * JetBrains Datalore - tem planos gratuitos para iniciantes.
+  * [Jupyter Lite](https://jupyter.org/try-jupyter/lab/)
 
 ### Primeiro script, para verificar se tudo está correto.
 
-* Inicie uma instância do REPL ou um novo notebook.
+1. Inicie uma instância do REPL ou um novo notebook.
   * Python puro: abra um `shell` digitando na barra de pesquisa `cmd` ou `powershell`, clique no ícone, depois digite `python`, aperte Enter.
   * Anaconda (miniconda): Em iniciar, encontre o `Anaconda Prompt` e clique, digite `python`, aperte Enter.
   * Thonny: Abra o editor.
   * Nuvem: crie um novo notebook, e depois uma célula no notebook.
-* Escreva o seguinte código:
+2. Escreva o seguinte código:
 
-```{code-cell} ipython3
+```python
 print("Hello world!")
 ```
 
-* Aperte Enter (ou Shift+Enter nos notebooks). Se a mensagem `Hello world!` aparecer logo em seguida, tudo está funcionando direito.
-* Se, ao digitar `python` no `shell` e aparecer um erro de que o comando não foi encontrado, você possui um problema na variável `PATH` de ambiente. Siga [este](https://realpython.com/add-python-to-path/) tutorial caso isso ocorra.
+3. Aperte Enter (ou Shift+Enter nos notebooks). Se a mensagem `Hello world!` aparecer logo em seguida, tudo está funcionando direito.
+4. Se, ao digitar `python` no `shell` e aparecer um erro de que o comando não foi encontrado, você possui um problema na variável `PATH` de ambiente. Siga [este](https://realpython.com/add-python-to-path/) tutorial caso isso ocorra.
 
 ### Com o que escrever scripts Python
 
@@ -202,6 +205,14 @@ Iremos trabalhar também com o uso de argumentos de linha de comando. Assim, as 
 
 Tente navegar no *shell* até o local do script `hello_world.py` criado na etapa anterior e tente rodá-lo com Python.
 
+## Instalação dos pacotes deste curso
+
+Antes de prosseguirmos, seria conveniente instalarmos os pacotes necessários para este curso. Já preparei um arquivo para isso chamado `requirements.txt`, que está na raiz (pasta base) do repositório deste livro/curso. Baixe o repositório pela interface do github (clicando no botão verde `Code` depois em `Download Zip`) e extraia o conteúdo em uma pasta apropriada. Navegue com o *shell* até a pasta com o conteúdo (ou clique na barra de navegação do windows explorer e digite `powershell` e aperte enter), e escreva o seguinte comando:
+
+`pip install -r requirements.txt`
+
+O significado deste documento será explorado mais para frente. Uma quantidade significativa de texto irá aparecer em sua tela, mas não se preocupe. Se houver alguma pergunta, apenas escreva `y` e aperte enter para continuar.
+
 ## Estrutura do curso
 
 Para podermos partir para exemplos de utilidade real, precisamos passar pelo aprendizado dos básicos. Isso constituirá a maior parte das aulas no começo. Descrições de variáveis, tipos, funções, loops (laços), condicionais e instalação e uso de pacotes serão abordados nessa etapa inicial. Os conceitos serão consolidados com alguns exemplos reais e fabricados.
@@ -210,36 +221,44 @@ Depois disso, passaremos para a resolução de exemplos reais junto com a introd
 
 Depois disso, passaremos para exemplos reais que utilizam várias técnicas ao mesmo tempo. Será fornecida uma descrição do problema e de conceitos necessários para resolvê-lo, junto com uma lista das técnicas e pacotes recomendados. A solução é fornecida, mas o objetivo é que você tente resolvê-los por conta própria, e depois comparar com as minhas soluções. Na medida do possível, utilizarei as melhores práticas que conheço nas resoluções que fornecerei.
 
-Após isso, com uma boa maturidade, abordaremos algumas questões de clareza e coesão de código, boas práticas, controle de versão e ambientes virtuais serão abordadas nesta etapa. Entraremos numa pequena tangente sobre como consolidar seu conhecimento em um pacote próprio que pode ser importado em arquivos futuros, como deixar seu pacote robusto com unit-tests, como escrever documentação e auto-gerar uma página com sphinx. Por fim, algumas palavras serão tecidas sobre como estruturar um estudo. Tudo será acompanhado de controle de versão com git. Cientistas, infelizmente, possuem a má fama de terem códigos ininteligíveis e mal estruturados. Pretendo que isso não seja uma crítica válida para vocês.
+Após isso, com uma boa maturidade, abordaremos algumas questões de clareza e coesão de código, boas práticas, controle de versão com git e ambientes virtuais. Entraremos numa pequena tangente sobre como consolidar seu conhecimento em um pacote próprio que pode ser importado em arquivos futuros, como deixar seu pacote robusto com unit-tests, como escrever documentação e auto-gerar uma página com sphinx. Por fim, algumas palavras serão tecidas sobre como estruturar um estudo. Tudo será acompanhado de controle de versão com git. Cientistas, infelizmente, possuem a má fama de terem códigos ininteligíveis e mal estruturados. Pretendo que isso não seja uma crítica válida para vocês.
 
 ## Avaliação final
 
-* Um repositório git, contendo controle de versão e a evolução do projeto, com instruções
-  para rodá-lo. Pode ser:
-  * Jupyter notebooks utilizados para o tratamento de dados. Neste caso, precisa ser completo,
-    com os dados em si.
-  * Pacote feito para agrupar funcionalidade. Neste caso, precisa de dados e de uma suite de
-    unit-tests e os dados necessários. Precisa ter o setup.py ou pyproject.toml, instalar
-    direto e depois rodar os unit-tests com uma coverage decente (não precisa ser 100%)
-* Deve incluir especificações para criação de ambiente virtual, e instruções de como instalar e
-  rodar (p.e. README.md).
-* Avaliação será feita em etapas
-  1. É um projeto de verdade (git ou não)?
-  2. Consigo seguir as instruções e rodar?
-  3. Está organizado?
-  4. O código está limpo? Legível, com bons nomes de função, etc?
-  5. O problema é simples demais? p.e. um hello world não vale. Sobre isso, pode mandar email que
-     eu avalio se é um tema "válido".
-* A avaliação será feita em etapas. Se não for projeto de verdade, não avança. Se não tiver boas instruções, não avança. Organização do código e limpeza serão avaliados juntos. Por fim, tudo será ponderado pela dificuldade. Se ficou barrado em alguma etapa, eu aviso e vc pode refazer ou consertar o problema, que reviso a nota. Sobre dificuldade do 
+O objetivo do curso é ensinar sobre tratamento de dados científicos de maneira reprodutível. Porém, eu entendo que você nem sempre irá possuir um conjunto de dados para tratar, seja pela natureza do seu trabalho, por sua situação atual, por problemas de proteção de dados e sigilo. Por isso, irei considerar dois tipos de projetos. Ou um pacote para tratamento de dados, ou um conjunto de jupyter notebooks + dados, mostrando o tratamento de dados de um artigo ou uma seção de sua dissertação/tese. Caso você não possua dados, você pode procurar por conjuntos de dados no Mendeley Data[^5], por exemplo e utilizá-los. Caso sejam sigilosos, você pode desenvolver o pacote, extraindo as funções que utilizou no tratamento, e mostrar o funcionamento via dados fabricados (por exemplo, utilizando os modelos somados de ruído aleatório) por meio dos unit-tests. Ambas as alternativas devem incluir especificações para criação de ambiente virtual, e instruções de como instalar e rodar (p.e. num arquivo README.md) o conteúdo das mesmas. Isso é essencial para ciência reprodutível.
+
+[^5]: [Já publiquei os dados de um artigo lá](http://doi.org/10.17632/mrrr7rk5pr.1), caso queira um ponto de partida.
+
+Eu sei que tudo isso parece uma tarefa bastante árdua, mas tudo será explicado no curso.
+
+A avaliação será em etapas:
+
+1. É um projeto de verdade (git ou não), e foi desenvolvido ao longo do tempo (1 commit só, ou vários, indicando o crescimento)?
+2. Consigo seguir as instruções e rodar?
+3. Está organizado?
+4. O código está limpo? Legível, com bons nomes de função, etc?
+5. O problema é simples demais? p.e. um hello world não vale. Sobre isso, pode mandar email que
+   eu avalio se é um tema "válido".
+
+Cada etapa será avaliada sequencialmente. Se não passar por uma, não avança para a próxima. Por exemplo:
+
+* Se não for um repositório git de verdade (1 commit só, commits feitos muito próximos no tempo, commits assinados por uma pessoa que não é você), não avança.
+* Se não tiver boas instruções, não avança. Idealmente, seguindo o passo a passo, incluindo a instalação de pacotes, tudo deve ser gerado sem erros.
+* O código precisa estar organizado. No caso do pacote, tente agrupar funções similares em arquivos com nomes apropriados. No caso dos notebooks, preze pela simplicidade e tente agrupar as funções em células sozinhas. Em ambos os casos, preze por documentação e comentários relevantes.
+* Por fim, irei perguntar "isso realmente resolveu um problema para essa pessoa?". Tal justificativa pode estar no arquivo README.md. Se não achar que isso é verdadeiro, irei pedir explicações.
+
+Passando em todas etapas, o aluno estará aprovado.
 
 ## Ajuda e material de referência
+
+Aprender a programar é muito mais fácil com alguém para lhe ajudar. Esta é uma lista com comunidades, livros, vídeos que já utilizei anteriormente e achei de boa qualidade.
 
 * Sites de pergunta e resposta:
   * Reddit /r/pythonprogramming
   * Reddit /r/learnprogramming
   * Python discord https://discord.gg/python
   * Stackoverflow
-  * ChatGPT
+  * ChatGPT - Sério. Ele é muito bom para explicar o que um código faz, e gerar código a partir de descrições. Cuidado com o abuso da ferramenta!
 * Sites com material escrito
   * https://docs.python.org/3/
   * https://www.realpython.com
@@ -262,8 +281,8 @@ Após isso, com uma boa maturidade, abordaremos algumas questões de clareza e c
   * [Python for Everybody](https://www.coursera.org/learn/python) - gratuito para testar - curso que eu fiz para aprender sobre o tema.
   * [Automate the Boring Stuff with Python](https://www.udemy.com/course/automate/) - frequentemente fica gratuito.
 * Youtube
-  * Arjancodes
-  * mcoding
+  * sentdex: material para iniciantes
+  * Arjancodes, mcoding: material mais avançado
   * Workshops e outros cursos online, como https://www.youtube.com/playlist?list=PLpLblYHCzJACqaFsfQiCWp0Wqy6qG4iau
-  * https://www.youtube.com/watch?v=v8o-7UICRNk e outros vídeos de conferências de Python (p.e. PyCon). Frequentemente há tutoriais longos sobre diversos temas e pacotes, inclusive para iniciantes em Python.
+  * Canais de conferências como [PyCon US](https://www.youtube.com/@PyConUS) e [pythonbrasil](https://www.youtube.com/@pythonbrasiloficial/videos). Frequentemente há tutoriais longos sobre diversos temas e pacotes, [inclusive para iniciantes em Python](https://www.youtube.com/watch?v=v8o-7UICRNk).
   * Um dos problemas envolvendo precisão de números de ponto flutuante: https://www.youtube.com/watch?v=nYDmBdUalgo
