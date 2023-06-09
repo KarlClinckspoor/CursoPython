@@ -211,12 +211,16 @@ Caso você queira, você pode acompanhar o conteúdo do curso por meio dos jupyt
 
 `pip install -r requirements.txt`
 
-O significado deste documento será explorado mais para frente. Uma quantidade significativa de texto irá aparecer em sua tela, mas não se preocupe. Se houver alguma pergunta, apenas escreva `y` e aperte enter para continuar.
+O significado desse documento será explorado mais para frente. Uma quantidade significativa de texto irá aparecer em sua tela, mas não se preocupe.
 
 Com tudo instalado, você pode abrir a interface do Jupyter Lab com o comando `jupyter lab`. Isso irá abrir uma aba no seu navegador com a interface do *Jupyter lab*, e aqui pode abrir e modificar os notebooks. Se você possuir a licença do Pycharm Professional ou estiver utilizando o VSCode com as extensões apropriadas, pode abrir os notebooks diretamente nesses programas, sem utilizar o *Jupyter lab*.
 
 ```{warning}
 Gerenciamento de pacotes e *kernels* é uma tarefa, infelizmente, um pouco complicada. É possível que você abra os notebooks em outros programas, ou em outros ambientes virtuais python ou conda (mais informações serão fornecidas depois) e não consiga importar um pacote que você tem certeza que instalou. Se isso ocorrer, entre em contato. São muitos problemas que podem causar isso, visto que deixei bem aberto a maneira de interagir com os notebooks. Se você seguir os passos recomendados aqui, não deverá ter problemas.
+```
+
+```{note}
+A [ferramenta](https://jupyterbook.org/en/stable/intro.html) utilizada para fazer este material utiliza uma linguagem de texto chamada MyST Markdown, que é compatível de forma geral com Markdown, mas possui algumas características extras que não são compreendidas pela interface do Jupyter Lab. Não se preocupe, não é um problema com sua instalação.
 ```
 
 ## Estrutura do curso
