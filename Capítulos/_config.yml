@@ -3,12 +3,18 @@
 
 title: Curso de Python
 author: Karl Jan Clinckspoor
+
+exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+only_build_toc_files: true
+
 # logo: logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
-#execute:
-#  execute_notebooks: force
+execute:
+  execute_notebooks: force
+  allow_errors: true
+
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -31,4 +37,5 @@ latex:
 #  use_issues_button: true
 #  use_repository_button: true
 
-only_build_toc_files: true
+launch_buttons:
+  notebook_interface : jupyterlab
