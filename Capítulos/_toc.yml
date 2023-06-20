@@ -8,5 +8,5 @@ chapters:
 - file: Capítulo01/Operações matemáticas
 - file: Capítulo01/Operadores bit-a-bit
 - file: Capítulo02/Variáveis
-- file: Capítulo03/Funções e variáveis de texto
+- file: Capítulo03/Funções e strings
 - file: Capítulo03/Formatação de strings com operador módulo
