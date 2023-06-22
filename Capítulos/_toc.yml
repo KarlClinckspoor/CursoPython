@@ -10,3 +10,5 @@ chapters:
 - file: Capítulo02/Variáveis
 - file: Capítulo03/Funções e strings
 - file: Capítulo03/Formatação de strings com operador módulo
+- file: Capítulo04/Condicionais
+- file: Capítulo05/Estruturas de dados e loops
