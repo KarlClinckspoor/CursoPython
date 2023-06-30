@@ -12,7 +12,8 @@ def count_words_in_text(string, extra_actions=None):
 
     for i, line in enumerate(string.split("\n")):
         line = line.strip()
-        line = line.strip(",.!?-;:")
+        for punctuation in ",.!?-;:":
+            line = line.replace(punctuation, "")
 
         if len(line) == 0:
             continue
