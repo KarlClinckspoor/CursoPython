@@ -12,4 +12,4 @@ def ler_csv1(arquivo):
     return resultado
 
 
-ler_csv_simples("./dados/exercício1.csv")
+ler_csv1("./dados/exercício1.csv")
