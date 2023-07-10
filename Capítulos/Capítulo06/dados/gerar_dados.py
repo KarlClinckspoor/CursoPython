@@ -7,7 +7,7 @@ def make_data_up():
     res = 16
 
     full_x = [i / res for i in range(60 * res)]
-    full_y = [math.exp(-x / 0.5) for x in full_x]
+    full_y = [6 * math.exp(-x / 19) for x in full_x]
     length = len(full_x)
     skip = length // 10
 
@@ -22,7 +22,7 @@ def make_data_up():
     second_y = full_y[second_part]
 
     dt1 = datetime(year=2019, month=4, day=12, hour=13, minute=12, second=13)
-    dt2 = dt1 + timedelta(seconds=13 + second_x[0])
+    dt2 = dt1 + timedelta(seconds=second_x[0])
 
     format = "%d/%m/%Y %H:%M:%S"
 
@@ -34,15 +34,9 @@ def make_data_up():
         + "\nx,y\n"
         + "\n".join((f"{x},{y}" for x, y in zip(subtracted_second_x, second_y)))
     )
-    txt3 = (
-        dt2.strftime(format)
-        + "\nx,y\n"
-        + "\n".join((f"{x},{y}" for x, y in zip(second_x, second_y)))
-    )
 
     Path("./p1.csv").write_text(txt1)
     Path("./p2.csv").write_text(txt2)
-    Path("./p3.csv").write_text(txt3)
 
 
 if __name__ == "__main__":
