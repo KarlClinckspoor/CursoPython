@@ -153,7 +153,7 @@ assert _find_matching_parenthesis_idx("abc(defg)hi(jklmno)p(qr)", 20) == 23
 def _formula_simplifier(formula: str) -> list[str]:
     """
     Goes through a chemical formula and simplifies its contents to a list of strings,
-    where each entry is an element. E.g. Fe2CO3 will return ['Fe', 'Fe', 'C', 'O', 'O', 'O']
+    where each entry is an element. E.g., Fe2CO3 will return ['Fe', 'Fe', 'C', 'O', 'O', 'O']
     :param formula: a chemical formula with only symbols in the periodic table. If it contains
         a 'J', then it is considered invalid.
     :return: a list of strings where each element is repeated the number of times it appears in the formula

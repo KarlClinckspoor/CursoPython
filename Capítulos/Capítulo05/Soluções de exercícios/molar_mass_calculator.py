@@ -98,7 +98,7 @@ def molar_mass_calculator(formula, atomic_mass_table):
             current_symbol = letter
             continue
         # Last loop, finalizing symbol
-        if letter == "J":  # Reached end, finalizes last symbol
+        if letter == "J":  # Reached end, finalizes the last symbol
             current_multiplier = 1 if current_multiplier == "" else int(current_multiplier)
             temp = [current_symbol] * current_multiplier
             elements.extend(temp)

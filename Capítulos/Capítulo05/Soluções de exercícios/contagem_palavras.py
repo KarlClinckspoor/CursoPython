@@ -2,8 +2,8 @@ def count_words_in_text(string, extra_actions=None):
     """
     string: book contents with lines separated by newlines '\\n'.
     encoding: encoding string to open file
-    extra_actions: iterable with callables that will operate in the text. Must receive 2 arguments,
-        a line number and the line content, and return the modified line.
+    extra_actions: iterable with callables that will operate in the text.
+    It must receive 2 arguments, a line number and the line content, and return the modified line.
     """
     if extra_actions == None:
         extra_actions = []

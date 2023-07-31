@@ -8,7 +8,7 @@ class ErroNumeroPalindromo(Exception):
 
 def checar_palindromo(string):
     if (len(string) == 0) or (len(string) > 100):
-        raise ErroComprimento("O comprimento da string precisa ser maior que 0!")
+        raise ErroComprimentoPalindromo("O comprimento da string precisa ser maior que 0!")
     if any(i.isnumeric() for i in string):
         raise ErroNumeroPalindromo("A string não pode conter qualquer número!")
 
