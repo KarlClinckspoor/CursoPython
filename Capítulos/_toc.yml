@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: Capítulo00/texto
+- file: Capítulo01/Operações matemáticas
+- file: Capítulo01/Extra-Operadores bit-a-bit
+- file: Capítulo02/Variáveis
+- file: Capítulo03/Funções e strings
+- file: Capítulo03/Extra-Formatação de strings com operador módulo
+- file: Capítulo04/Condicionais
+- file: Capítulo05/Estruturas de dados e loops
+- file: Capítulo05/Extra-Exceções
+- file: Capítulo05/Extra-Geradores
+- file: Capítulo06/Importando bibliotecas
+  

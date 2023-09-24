@@ -1,0 +1,6 @@
+# Curso Python
+
+Aulas
+
+```{tableofcontents}
+```
